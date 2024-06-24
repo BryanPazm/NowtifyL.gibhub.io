@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %} - Nowtify</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/bootstrap.min.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/all.min.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/styles.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/nav.css')}}"
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+</head>
+<body>
+    
+    <!---Contenido de la pagina-->
+    {% block content %}
+    {% endblock %}
+
+    <script src="{{ url_for('static', filename = 'js/bootstrap/bootstrap.bundle.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle"></script>
+
+</body>
+</html>
